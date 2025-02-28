@@ -25,10 +25,13 @@
 .status {
   height: 10px;
   width: 10px;
-  margin-top: 20px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+}
+
+.a {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 
 .nav_links1 li {
@@ -51,7 +54,7 @@
   display: block;
   text-align: center;
   color: white;
-  padding: 14px 16px;
+  padding: 20px 20px;
   text-decoration: none;
   background-color: #0C3980;
 }
@@ -138,20 +141,6 @@ li a:hover {
 }
 
 
-.status {
-  height: 10px;
-  width: 10px;
-  margin: 20px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-
-
-.a {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-}
 
 
 

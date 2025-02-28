@@ -1,0 +1,287 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.navigation{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #0C3980;
+  align-items: center;
+  padding:25px, 10%;
+}
+
+.navigation ul{
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
+  background-color: #0C3980;
+  height: 100%;
+  width: 100%;
+}
+
+.status {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.a {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+.nav_links1 li {
+  float: left;
+  width: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 0px 20px;
+}
+
+.nav_links2 li {
+  float: right;
+  width: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 0px 20px;
+}
+
+.navigation li a {
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  background-color: #0C3980;
+}
+
+.animationList {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 50px 50px;
+}
+
+.h3{
+  font-size: 40px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4a4a4a;
+  padding-bottom: 40px;
+  padding-top: 50px;
+
+}
+
+.container {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+#container {
+  color:#999;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:100px;  
+  position:relative;
+  text-align: center;
+  bottom:45%;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:0px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+  width: fit-content;
+}
+
+#flip div:nth-child(1) {
+  animation: show 11s linear infinite;
+}
+
+#flip div:first-child div {
+  background:red;
+}
+
+#flip div:nth-child(2) div{
+  background:orange;
+}
+
+#flip div:nth-child(3) div{
+  background:yellow;
+}
+
+#flip div:nth-child(4) div{
+  background:green;
+}
+
+#flip div:nth-child(5) div{
+  background:blue;
+}
+
+#flip div:last-child div{
+  background: purple;
+}
+
+@keyframes show {
+  0% {margin-top:-540px;}
+  2% {margin-top:-450px;}
+  16% {margin-top:-450px;}
+  18% {margin-top:-360px;}
+  32% {margin-top:-360px;}
+  34% {margin-top:-270px;}
+  48% {margin-top:-270px;}
+  50% {margin-top:-180px;}
+  64% {margin-top:-180px;}
+  66% {margin-top:-90px;}
+  80% {margin-top:-90px;}
+  82% {margin-top:0px;}
+  96.999% {margin-top:0px;}
+  97% {margin-top:-540px;}
+  100% {margin-top:-540px;}
+}
+
+img {
+  display:flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 200px;
+  max-width: 80%;
+  height: auto; 
+}
+
+.blurWrapper {
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
+  gap: 2rem;
+}
+
+.blurWrapper::before {
+	--line: hsl(0 0% 95% / 0.25);
+	content: "";
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	background:
+		linear-gradient(90deg, var(--line) 1px, transparent 1px 10vmin) 0 -5vmin / 10vmin 10vmin,
+		linear-gradient(var(--line) 1px, transparent 1px 10vmin) 0 -5vmin / 10vmin 10vmin;
+	mask: linear-gradient(-15deg, transparent 30%, white);
+	top: 0;
+	z-index: -1;
+}
+
+
+section {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+section p {
+  margin: 0;
+  font-size: 2.25rem;
+  color: hsl(0 0% 40%);
+  text-align: center;
+  background: linear-gradient(hsl(0 0% 80%), hsl(0 0% 50%));
+  color: transparent;
+  background-clip: text;
+}
+
+
+.code {
+  font-size: 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+  color: hsl(0 0% 100%);
+  border-radius: 1rem;
+  background: hsl(0 0% 6%);
+  justify-content: center;
+  box-shadow: 0 1px hsl(0 0% 100% / 0.25) inset;
+}
+
+.code:hover {
+  cursor: grab;
+}
+
+.digit {
+  display: flex;
+  height: 100%;
+  padding: 5.5rem 1rem;
+}
+
+.digit:focus-visible {
+  outline-color: hsl(0 0% 50% / 0.25);
+  outline-offset: 1rem;
+}
+
+.digit span {
+  scale: calc(var(--active, 0) + 0.5);
+  filter: blur(calc((1 - var(--active, 0)) * 1rem));
+  transition: scale calc(((1 - var(--active, 0)) + 0.2) * 1s), filter calc(((1 - var(--active, 0)) + 0.2) * 1s);
+}
+
+.blurWrapper ul {
+  padding: 0;
+  margin: 0;
+}
+
+.digit:first-of-type {
+  padding-left: 5rem;
+}
+.digit:last-of-type {
+  padding-right: 5rem;
+}
+
+:root {
+  --lerp-0: 1; /* === sin(90deg) */
+  --lerp-1: calc(sin(50deg));
+  --lerp-2: calc(sin(45deg));
+  --lerp-3: calc(sin(35deg));
+  --lerp-4: calc(sin(25deg));
+  --lerp-5: calc(sin(15deg));
+}
+
+.digit:is(:hover, :focus-visible) {
+  --active: var(--lerp-0);
+}
+.digit:is(:hover, :focus-visible) + .digit,
+.digit:has(+ .digit:is(:hover, :focus-visible)) {
+  --active: var(--lerp-1);
+}
+.digit:is(:hover, :focus-visible) + .digit + .digit,
+.digit:has(+ .digit + .digit:is(:hover, :focus-visible)) {
+  --active: var(--lerp-2);
+}
+.digit:is(:hover, :focus-visible) + .digit + .digit + .digit,
+.digit:has(+ .digit + .digit + .digit:is(:hover, :focus-visible)) {
+  --active: var(--lerp-3);
+}
+.digit:is(:hover, :focus-visible) + .digit + .digit + .digit + .digit,
+.digit:has(+ .digit + .digit + .digit + .digit:is(:hover, :focus-visible)) {
+  --active: var(--lerp-4);
+}
+.digit:is(:hover, :focus-visible) + .digit + .digit + .digit + .digit + .digit,
+.digit:has(+ .digit + .digit + .digit + .digit + .digit:is(:hover, :focus-visible)) {
+  --active: var(--lerp-5);
+}
