@@ -1,33 +1,112 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #0C3980;
-  }
+.navigation ul{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0C3980;
+}
+.status {
+  height: 10px;
+  width: 10px;
+  margin: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #1e03b7;
-  }
+.navigation li {
+  float: left;
+}
 
-  .status {
-    height: 10px;
-    width: 10px;
-    margin: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-  }
+.navigation li a {
+  list-style-type:none;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #0C3980;
+}
+
+.image-hover{
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  float: none;
+  margin-right: auto;
+  padding: 0;
+  text-align: left;
+  width: 400px;
+  height: 100px;
+  background-image: url("./images/logo.png"); /* Initial background image */
+  background-size: cover;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.image-hover:hover {
+  width: 400px;
+  height: 400px;
+  background-image: url("./images/fedexanimate.gif"); /* Change on hover */
+}
+
+.wrapper{
+  margin: 20px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2
+}
+
+.centerNavigation ul{
+  margin:0;
+  padding:0;/*set both to zero to remove browser inconsistencies*/
+  list-style-type:none;/*get rid of bullet points*/
+  height:32px/*just to avoid some possible float issues*/
+}
+
+.centerNavigation li{
+  float:left;/*float the li element so the menu's horizontal...*/
+  width:100px/*...and set the width*/
+  
+}
+
+.centerNavigation li:hover{
+  text-decoration: underline;
+}
+
+.centerNavigation li a{
+  display:block;/*make the link a block element...*/
+  margin-right:20px;
+  margin-left: 20px;
+  width:100px;/*...with a fixed width...*/
+  line-height:30px;/*...and set the line-height to vertically centre the text*/
+  text-align:center;/*horizontally centre the text...*/
+  color:#4a4a4a;/*...colour it black...*/
+  text-decoration:none;/*...and remove the default underline*/
+  background-color:#ffffff;/*give the link a what background...*/
+  border:1px solid white/*...and a white border...*/
+  
+}
+
+.a {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+
