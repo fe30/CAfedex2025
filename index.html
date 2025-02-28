@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/372a03e861.js" crossorigin="anonymous"></script>
     <script src= "script.js"></script>
     <title>FedexDay2025</title>
 </head>
 <body>
-    <div id="navigationHeader" class="navigation" tabindex="-1">
-        <ul>
+    <nav class="navigation">
+        <ul class="nav_links1">
             <li><span class="status"></span></li>
-            <li><a href="news.asp">Messages</a></li>
-            <li><a href="contact.asp">ToDo</a></li>
-            <li><a href="about.asp">Bookmarks</a></li>
-            <li><a href="about.asp">Share</a></li>
-            <li><a class="search">
-                <form action="#"></form>
-                    <input type="text" placeholder="Search CA Home" name="search">
-                <form></form></li>
-            <li><a class="navigation" href="logo-image"><img src="g:\chat.png" class="img-fluid"></a></li>
-            <li><a href="about.asp">Add Content</a></li>
-            <li><a style="float:right"><a class="active"href="#EN">EN</a></li>
+            <li><a href="news.asp">
+                <div class="icon">
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                </a>
+            </li>
+            <li><a href="contact.asp">
+                <div class="icon">
+                    <i class="fa-solid fa-square-check"></i>
+                </div>
+            </a></li>
+            <li><a href="about.asp">
+                <div class="icon">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </a></li>
+            <li><a href="about.asp">
+                <div class="icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+            </a></li>
         </ul>
-    </div>
+        <div class="searchBox">
+            <input type="text" placeholder="Search..">
+        </div>
+        <ul class="nav_links2">
+            <li><a href="about.asp">en</a></li>
+            <li><a href="about.asp">+</a></li>
+        </ul>
+    </nav>
     <div id="page" class="wrapper">
         <div class="row">
             <div class="column">
