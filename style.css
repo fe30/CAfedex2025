@@ -1,28 +1,56 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.navigation{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #0C3980;
+  align-items: center;
+  padding:25px, 10%;
+}
+
 .navigation ul{
-  list-style-type:none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  list-style-type:none;
   background-color: #0C3980;
+  height: 100%;
+  width: 100%;
 }
+
 .status {
   height: 10px;
   width: 10px;
-  margin: 10px;
+  margin-top: 20px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
 }
 
-.navigation li {
+.nav_links1 li {
   float: left;
+  width: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 0px 20px;
+}
+
+.nav_links2 li {
+  float: right;
+  width: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 0px 20px;
 }
 
 .navigation li a {
-  list-style-type:none;
   display: block;
-  color: rgb(255, 255, 255);
   text-align: center;
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
   background-color: #0C3980;
@@ -102,20 +130,22 @@
   text-decoration:none;/*...and remove the default underline*/
   background-color:#ffffff;/*give the link a what background...*/
   border:1px solid white/*...and a white border...*/
+}
  
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #1e03b7;
-  }
+li a:hover {
+  background-color: #1e03b7;
+}
 
-  .status {
-    height: 10px;
-    width: 10px;
-    margin: 20px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-  }
+
+.status {
+  height: 10px;
+  width: 10px;
+  margin: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
 
 
 
